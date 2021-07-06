@@ -15,10 +15,58 @@
 
 <body>
 
-    <header class="jumbotron ">
-        <div class="container ">
-            <div class="row row-header ">
-                <div class="col-12 col-sm-6 ">
+    <!-- 1.button= to take a button
+        2.nav-toggler: for smaller screen size use toggle button
+        3.data-toggle=js componets
+        4.NavBar:
+        5:span:
+        6:navbar-toggler-icon : to get that tag
+        7: 
+    -->
+
+    <!--1. navbar == to creat navigation bar
+        2.navbar-expand-sm : when screen size is small than toggle button will appear
+        3.container: to give whole website same width
+        4.navbar-header: nav-bar heading
+        5.navbar-brand: website name in nav bar
+        6.navbar-nav:use with ul tag
+        7.mr-auto : margin right we can specify
+        8. active: on which page are you we make it active
+    -->
+
+    <!-- here we put this link inside toggle button for smaller screen
+        1. collapse , nav-collapse": use it inside the div 
+        2. use the id NavBar
+    -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <a class="navbar-brand mr-auto" href="/conFusion/index.html">My Website</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class=" nav-item active"><a class="nav-link" href="/conFusion/index.html"> HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/conFusion/Assignment1/aboutus.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"> Log in</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <header class=" jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
@@ -28,8 +76,8 @@
         </div>
     </header>
 
-    <div class="container ">
-        <div class="row row-content align-items-center ">
+    <div class="container">
+        <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3 ">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
@@ -40,7 +88,7 @@
         </div>
 
 
-        <div class="row row-content">
+        <div class="row row-content ">
             <div class="col-12 col-sm-4 col-md-3 ">
                 <h3>This Month's Promotions</h3>
             </div>
@@ -64,19 +112,19 @@
     <hr>
 
     <footer>
-        <div class="container ">
-            <div class="row ">
-                <div class="col-4 offset-1 col-sm-2 ">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled ">
-                        <li><a href="# ">Home</a></li>
-                        <li><a href="# ">About</a></li>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5><u>Links</u></h5>
+                    <ul class="list-unstyled text-white ">
+                        <li class="text-dark"><a href="/conFusion/index.html">Home</a></li>
+                        <li><a href="/conFusion/Assignment1/aboutus.html">About</a></li>
                         <li><a href="# ">Menu</a></li>
                         <li><a href="# ">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5 ">
-                    <h5>Our Address</h5>
+                    <h5><u>Our Address</u></h5>
                     <address>
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
@@ -86,9 +134,10 @@
 		              Email: <a href="mailto:confusion@food.net ">confusion@food.net</a>
 		           </address>
                 </div>
-                <div class="col-12 col-sm-4 text-center align-self-center ">
-                    <div>
-                        <img src="./download.jpg " width="20px " height="20px " class="rounded-circle ">
+                <div class="col-12 col-sm-4 ">
+                    <div class="handle">
+                        <h5><u>Handles</u></h5>
+
                         <a href=" http://google.com/+ ">Google+</a>
                         <br>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
@@ -112,9 +161,9 @@
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js "></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js "></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script src="/conFusion/node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="/conFusion/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/conFusion/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
