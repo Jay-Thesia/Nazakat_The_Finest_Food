@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- week2 -->
 
     <!-- 1.button= to take a button
         2.nav-toggler: for smaller screen size use toggle button
@@ -47,7 +48,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavBar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">My Website</a>
+                <a class="navbar-brand" href="index.html"><img src="Assignment1/logo/logo.png" width="35px"></a>
             </div>
 
 
@@ -72,7 +73,15 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12">
+                <div class="col-sm-5 col-md-3 align-self-center">
+                    <img src="assignment1/logo/logo.png" alt="">
+
+                </div>
+
+                <div class="col-sm-5 col-md-3 align-self-center btn-group" role="group">
+
+                    <a class="nav-link btn btn-warning" role="button" data-toggle="tooltip" data-html="true" title="Or Call us on <br><strong>9974967074</strong>" data-placement="bottom" href="#Reserve">Reserve Table</a>
+
                 </div>
             </div>
         </div>
@@ -86,8 +95,13 @@
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="Assignment1/logo/uthappizza.png" alt="Uthappizza">
+                    <div class="media-body">
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$1.39</span></h2>
+                        <p class="d-none d-sm-block"> A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -97,35 +111,122 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+
+                <div class="media">
+                    <div class="media-body">
+                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img class="d-flex ml-3 img-thumbnail align-self-center" src="Assignment1/logo/buffet.png" alt="buffet">
+
+                </div>
             </div>
+
         </div>
 
-        <div class="row row-content ">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3 ">
+        <div class="row row-content">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col col-sm order-sm-first col-md ">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="Assignment1/logo/alberto.png" alt="me" width=105px height="105px">
+                    <div class="media-body">
+                        <h2>Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <hr>
 
+
+
+    <div class="container" id="Reserve">
+        <div class="col-9 offset-2">
+            <div class="card">
+                <div class="card-header bg-warning">
+                    <h3>Reserve a Table</h3>
+                </div>
+                <div class="card-body form-group row">
+
+                    <label for="no of guests" class="control-label col-sm-8 col-md-3">
+                        <h6>Number of Guests</h6>
+                    </label>
+
+                    <div class="form-group col-md">
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radioGroup" value="1st">
+                            <label for="one">1</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radioGroup" value="2nd">
+                            <label for="two">2</label>
+                        </div>
+
+                        <div class="form-check form-check-inline radio-inline">
+                            <input type="radio" class="form-check-input" name="radioGroup" value="3rd">
+                            <label for="three">3</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radioGroup" value="4th">
+                            <label for="four">4</label>
+                        </div>
+
+                        <div class="form-check form-check-inline ">
+                            <input type="radio" class="form-check-input" name="radioGroup" value="5th">
+                            <label for="five">5</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="radioGroup" value="6th">
+                            <label for="six">6</label>
+                        </div>
+                    </div>
+
+
+
+                    <!-- date and time -->
+
+                    <div class="card-body form-group row">
+                        <label for=" DateNTime" class="control-label col-sm-8 col-md-3"><h6>Date and Time</h6></label>
+                        <div class="col-md-3">
+                            <input type="number" name="dateNTime" id="d&t" placeholder="date">
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="text" placeholder="time">
+                        </div>
+                    </div>
+
+
+                    <!-- Reserved Button -->
+                    <div class="col-2 offset-3">
+                        <a type="submit" class="btn btn-primary " href="# ">Reserve</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
     <footer>
         <div class="container ">
             <div class="row ">
                 <div class="col-4 offset-1 col-sm-2 ">
                     <h5><u>Links</u></h5>
-                    <ul class="list-unstyled text-white">
+                    <ul class="list-unstyled text-white ">
 
-                        <li><a href="index.html"><span class="fa fa-home"></span> Home</a></li>
-                        <li><a href="Assignment1/aboutus.html"><span class="fa fa-info "></span> About</a></li>
-                        <li><a href="#"><span class="fa fa-list"></span> Menu</a></li>
-                        <li><a href="Assignment1/contact.html"><span class="fa fa-id-card"></span> Contact</a></li>
+                        <li><a href="index.html "><span class="fa fa-home "></span> Home</a></li>
+                        <li><a href="Assignment1/aboutus.html "><span class="fa fa-info "></span> About</a></li>
+                        <li><a href="# "><span class="fa fa-list "></span> Menu</a></li>
+                        <li><a href="Assignment1/contact.html "><span class="fa fa-id-card "></span> Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5 ">
@@ -134,8 +235,8 @@
 		              121, Clear Water Bay Road<br>
 		              Clear Water Bay, Kowloon<br>
 		              HONG KONG<br>
-		              <span class="fa fa-phone fg-lg"></span>: +852 1234 5678<br>
-		            <span class="fa fa-fax fa-lg"></span>: +852 8765 4321<br>
+		              <span class="fa fa-phone fg-lg "></span>: +852 1234 5678<br>
+		            <span class="fa fa-fax fa-lg "></span>: +852 8765 4321<br>
 		              Email: <a href="mailto:confusion@food.net ">confusion@food.net</a>
 		           </address>
                 </div>
@@ -143,12 +244,12 @@
                     <div class="handle ">
                         <h5><u>Handles</u></h5>
                         <span></span>
-                        <a href="http://google.com/+ " class="dark-back"><span class="fa fa-google"></span></a>
-                        <a href="http://www.facebook.com/profile.php?id=" class="dark-back"><span class="fa fa-facebook"></span></a>
-                        <a href=" http://www.linkedin.com/in/"><span class="fa fa-linkedin"></span></a>
-                        <a href="http://twitter.com/ "><span class="fa fa-twitter"></span></a>
-                        <a href="http://youtube.com/ "><span class="fa fa-youtube"></span></a>
-                        <a href="mailto: "><span class="fa fa-envelope"></span></a>
+                        <a href="http://google.com/+ " class="dark-back "><span class="fa fa-google "></span></a>
+                        <a href="http://www.facebook.com/profile.php?id=" class=" dark-back "><span class="fa fa-facebook "></span></a>
+                        <a href=" http://www.linkedin.com/in/ "><span class="fa fa-linkedin "></span></a>
+                        <a href="http://twitter.com/ "><span class="fa fa-twitter "></span></a>
+                        <a href="http://youtube.com/ "><span class="fa fa-youtube "></span></a>
+                        <a href="mailto: "><span class="fa fa-envelope "></span></a>
                     </div>
                 </div>
             </div>
@@ -161,15 +262,17 @@
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <<<<<<< HEAD <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        =======
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        >>>>>>> 9d648d9def2b68282f11d017032d7f6359d65153
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+    <!-- jquary syntax -->
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
