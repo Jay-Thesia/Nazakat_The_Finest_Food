@@ -1,0 +1,84 @@
+@lt-gray: #ddd;
+@background-dark: #343a40;
+@background-light: black;
+@background-pale: gold;
+
+//height variable
+@carousel-item-height: 230px;
+
+//mixin(one or more css properties in one)
+.margin(@pad-up-dn:0px , @pad-left-right:0px) {
+  margin: 0px auto;
+  padding: @pad-up-dn @pad-left-right;
+}
+
+.row-header {
+  .margin();
+}
+
+.row-content {
+  .margin(20px,0px);
+  border-bottom: 2px ridge;
+  min-height: 300px;
+}
+
+footer {
+  background-color: @background-light;
+  .margin(20px, 0px);
+  color: @background-pale;
+}
+
+.jumbotron {
+  .margin(70px,30px);
+  background-color: @background-light;
+  color: @background-pale;
+}
+
+address {
+  font-size: 90%;
+  margin: 0px;
+}
+
+.copyright {
+  padding: 50px;
+}
+
+.handle {
+  margin-left: 42px;
+}
+
+.tab-content {
+  border-left: 2px solid @lt-gray;
+  border-bottom: 2px solid @lt-gray;
+  border-right: 2px solid @lt-gray;
+  padding: 10px;
+}
+
+.login{
+    cursor:pointer
+}
+
+//nested class
+.carousel {
+  background-color: @background-light;
+
+  .carousel-item {
+    height: @carousel-item-height;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: @carousel-item-height;
+      max-width: 200px;
+    }
+  }
+
+}
+
+#carouselButton {
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 1;
+}

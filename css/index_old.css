@@ -1,0 +1,70 @@
+.jumbotron {
+    background-color: black;
+    color: gold;
+}
+
+.row-header {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.row-content {
+    border-bottom: 2px ridge;
+    padding: 50px 0px 50px 0px;
+    min-height: 40px;
+}
+
+footer {
+    background-color: black;
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    color: gold
+}
+
+address {
+    font-size: 90%;
+    margin: 0px auto;
+}
+
+.copyright {
+    padding: 50px;
+}
+
+.handle {
+    margin-left: 42px;
+}
+
+.tab-content {
+    border-left: 1px solid#ddd;
+    border-bottom: 1px solid#ddd;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+}
+
+.carousel {
+    background: black;
+}
+
+.carousel-item {
+    height: 230px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 230px;
+    max-width: 200px;
+}
+
+.carousel-caption p {
+    color: rgb(250, 250, 250);
+    text-align: center;
+}
+
+#carouselButton {
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    z-index: 1;
+}
