@@ -1,0 +1,20 @@
+$background-dark:#212529;
+$background-pale:gold;
+$background-body: black;
+.modal-header {
+    background-color: $background-dark;
+    color: $background-pale;
+    .close {
+        color: $background-pale;
+    }
+}
+
+.modal-body {
+    background-color: $background-body;
+    color: $background-pale;
+}
+
+.buttonRes,
+.logButton {
+    color: $background-pale;
+}
